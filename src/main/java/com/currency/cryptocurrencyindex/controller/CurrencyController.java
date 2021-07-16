@@ -7,8 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.currency.cryptocurrency.entity.BitCoinEntity;
 import com.currency.cryptocurrencyindex.service.CurrencyService;
-import com.example.cryptocurrency.entity.BitCoinEntity;
 
 @Controller
 public class CurrencyController {

@@ -18,7 +18,7 @@ import org.apache.commons.csv.CSVRecord;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
-import com.example.cryptocurrency.entity.BitCoinEntity;
+import com.currency.cryptocurrency.entity.BitCoinEntity;
 
 /**
 *	Bit Coin Price Index (Daily Updated)

@@ -1,4 +1,4 @@
-package com.example.cryptocurrency.entity;
+package com.currency.cryptocurrency.entity;
 
 public class BitCoinEntity {
 
