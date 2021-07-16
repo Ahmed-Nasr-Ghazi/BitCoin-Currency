@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+	
+<html xmlns:th="http://www.thymeleaf.org">
+
+  <head>
+    <title>Thymeleaf</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+
+  <body>
+  <div class="container mt-5">
+  	<h4>For Online Resource</h4>
+  	<a th:href="@{/online}"
+				class="btn btn-info d-block w-25 btn-sm mb-2">Online</a>
+	<h4>For File Resource</h4>			
+	<a th:href="@{/file}"
+				class="btn btn-info d-block w-25 btn-sm mb-0">File</a>
+  </div>
+  </body>
+
+</html>
