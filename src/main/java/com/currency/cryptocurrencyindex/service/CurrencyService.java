@@ -71,7 +71,6 @@ public class CurrencyService {
 			bitCoinEntity.setPrice(record.get("price(USD)"));
 			bitCoinEntity.setGeneratedCoins(record.get(7));
 
-			System.out.println(bitCoinEntity);
 			tempList.add(bitCoinEntity);		            
 		}
 		this.finalList = tempList;

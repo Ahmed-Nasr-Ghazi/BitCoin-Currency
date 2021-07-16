@@ -11,7 +11,7 @@ import com.currency.cryptocurrencyindex.service.CurrencyService;
 import com.example.cryptocurrency.entity.BitCoinEntity;
 
 @Controller
-public class CurrencyRestController {
+public class CurrencyController {
 
 	@Autowired
 	CurrencyService currencyService;
