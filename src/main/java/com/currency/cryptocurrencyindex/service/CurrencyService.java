@@ -33,7 +33,7 @@ public class CurrencyService {
 
 	
 	
-	private String VIRUS_DATA_URI = "https://s3.amazonaws.com/rawstore.datahub.io/"
+	private String CURRENCY_DATA_URI = "https://s3.amazonaws.com/rawstore.datahub.io/"
 			+ "26eb33c1369b7cd90203b6fd23383a46.csv";
 	
 	List<BitCoinEntity> finalList = new ArrayList<>();
@@ -51,7 +51,7 @@ public class CurrencyService {
 
 		HttpClient client = HttpClient.newHttpClient();
 		HttpRequest request = HttpRequest.newBuilder()
-				.uri(URI.create(VIRUS_DATA_URI))
+				.uri(URI.create(CURRENCY_DATA_URI))
 				.build();
 		HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 		
@@ -107,9 +107,7 @@ public class CurrencyService {
             //Setting Date and Price
             bitCoinEntity.setDate(date);
             bitCoinEntity.setPrice(price);
-            
-            System.out.println(bitCoinEntity);
-            
+                        
             newList.add(bitCoinEntity);
         }
         this.bitCoinList = newList;       
